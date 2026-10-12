@@ -1,15 +1,15 @@
-// Replace only the image value to apply the final hero artwork later.
+// Portfolio demonstration photos; source and license details: assets/images/README.md.
 const heroSlides=[
-  {id:'hero-slide-01',label:'임시 배너 이미지 01',image:''},
-  {id:'hero-slide-02',label:'임시 배너 이미지 02',image:''},
-  {id:'hero-slide-03',label:'임시 배너 이미지 03',image:''}
+  {id:'hero-slide-01',label:'싱그러운 담양여행',image:'assets/images/hero-illustrated-01.webp',mobileImage:'assets/images/hero-illustrated-01-mobile.webp'},
+  {id:'hero-slide-02',label:'봄향기 가득 제주여행',image:'assets/images/hero-illustrated-02.webp',mobileImage:'assets/images/hero-illustrated-02-mobile.webp'},
+  {id:'hero-slide-03',label:'설렘 가득 몰디브여행',image:'assets/images/hero-illustrated-03.webp',mobileImage:'assets/images/hero-illustrated-03-mobile.webp'}
 ];
 const heroTrack=document.querySelector('#hero-track');
 const heroDots=document.querySelector('#hero-dots');
 let heroIndex=0;
 let heroTimer;
 
-heroTrack.innerHTML=heroSlides.map((slide,index)=>`<div class="hero-slide" id="${slide.id}" role="group" aria-label="${index+1} / ${heroSlides.length}"${slide.image?` style="background-image:url('${slide.image}')"`:''}><span class="hero-slide__label">${slide.label}</span></div>`).join('');
+heroTrack.innerHTML=heroSlides.map((slide,index)=>`<div class="hero-slide" id="${slide.id}" role="group" aria-label="${index+1} / ${heroSlides.length}"><span class="hero-slide__label"><picture><source media="(max-width:800px)" srcset="${slide.mobileImage}"><img src="${slide.image}" alt="${slide.label}" width="2172" height="724" decoding="async" ${index===0?'fetchpriority="high"':'loading="lazy"'}></picture></span></div>`).join('');
 heroDots.innerHTML=heroSlides.map((_,index)=>`<button type="button" class="${index===0?'active':''}" aria-label="${index+1}번 배너 보기" aria-current="${index===0?'true':'false'}" data-hero-index="${index}"></button>`).join('');
 
 function showHeroSlide(index){
@@ -39,27 +39,28 @@ document.querySelector('.hero').addEventListener('mouseleave',startHeroAutoplay)
 document.addEventListener('visibilitychange',()=>document.hidden?stopHeroAutoplay():startHeroAutoplay());
 startHeroAutoplay();
 
-const images={seoul:'assets/images/seoul-hotel.png',busan:'assets/images/busan-hotel.png',jeju:'assets/images/jeju-resort.png',resort:'assets/images/hero-resort.png'};
-const dealHotels=Array.from({length:6},(_,index)=>({id:`deal-hotel-${index+1}`,area:'지역명',name:'호텔이름',discount:'50%',oldPrice:'500000',price:'250000',image:''}));
+const hotelImages=Array.from({length:8},(_,index)=>`assets/images/hotel-${String(index+1).padStart(2,'0')}.webp`);
+const destinationImages=Object.fromEntries(['jeju','busan','gangneung','tokyo','osaka','bangkok'].map(key=>[key,`assets/images/destination-${key}.webp`]));
+const dealHotels=Array.from({length:6},(_,index)=>({id:`deal-hotel-${index+1}`,area:'지역명',name:'호텔이름',discount:'50%',oldPrice:'500000',price:'250000',image:hotelImages[index]}));
 const promotionSlideData={
-  jeju:Array.from({length:4},(_,index)=>({image:'',label:`제주 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
-  busan:Array.from({length:4},(_,index)=>({image:'',label:`부산 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
-  gangneung:Array.from({length:4},(_,index)=>({image:'',label:`강릉 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
-  tokyo:Array.from({length:4},(_,index)=>({image:'',label:`도쿄 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
-  osaka:Array.from({length:4},(_,index)=>({image:'',label:`오사카 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
-  bangkok:Array.from({length:4},(_,index)=>({image:'',label:`방콕 프로모션 이미지 ${String(index+1).padStart(2,'0')}`}))
+  jeju:Array.from({length:4},(_,index)=>({image:destinationImages.jeju,label:`제주 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
+  busan:Array.from({length:4},(_,index)=>({image:destinationImages.busan,label:`부산 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
+  gangneung:Array.from({length:4},(_,index)=>({image:destinationImages.gangneung,label:`강릉 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
+  tokyo:Array.from({length:4},(_,index)=>({image:destinationImages.tokyo,label:`도쿄 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
+  osaka:Array.from({length:4},(_,index)=>({image:destinationImages.osaka,label:`오사카 프로모션 이미지 ${String(index+1).padStart(2,'0')}`})),
+  bangkok:Array.from({length:4},(_,index)=>({image:destinationImages.bangkok,label:`방콕 프로모션 이미지 ${String(index+1).padStart(2,'0')}`}))
 };
 const domesticData=[
-  {id:'jeju',name:'제주',hotelCount:'3,245 호텔',thumbnail:'',promotionKey:'jeju'},
-  {id:'busan',name:'부산',hotelCount:'2,180 호텔',thumbnail:'',promotionKey:'busan'},
-  {id:'gangneung',name:'강릉',hotelCount:'1,540 호텔',thumbnail:'',promotionKey:'gangneung'}
+  {id:'jeju',name:'제주',hotelCount:'3,245 호텔',thumbnail:destinationImages.jeju,promotionKey:'jeju'},
+  {id:'busan',name:'부산',hotelCount:'2,180 호텔',thumbnail:destinationImages.busan,promotionKey:'busan'},
+  {id:'gangneung',name:'강릉',hotelCount:'1,540 호텔',thumbnail:destinationImages.gangneung,promotionKey:'gangneung'}
 ];
 const globalData=[
-  {id:'tokyo',name:'도쿄',hotelCount:'2,980 호텔',thumbnail:'',promotionKey:'tokyo'},
-  {id:'osaka',name:'오사카',hotelCount:'2,110 호텔',thumbnail:'',promotionKey:'osaka'},
-  {id:'bangkok',name:'방콕',hotelCount:'3,420 호텔',thumbnail:'',promotionKey:'bangkok'}
+  {id:'tokyo',name:'도쿄',hotelCount:'2,980 호텔',thumbnail:destinationImages.tokyo,promotionKey:'tokyo'},
+  {id:'osaka',name:'오사카',hotelCount:'2,110 호텔',thumbnail:destinationImages.osaka,promotionKey:'osaka'},
+  {id:'bangkok',name:'방콕',hotelCount:'3,420 호텔',thumbnail:destinationImages.bangkok,promotionKey:'bangkok'}
 ];
-const createRatedHotels=prefix=>Array.from({length:8},(_,index)=>({id:`${prefix}-${index+1}`,name:'호텔이름',image:'',rating:'4.5',price:'20000000 원 ~',favorite:false}));
+const createRatedHotels=prefix=>Array.from({length:8},(_,index)=>({id:`${prefix}-${index+1}`,name:'호텔이름',image:hotelImages[index],rating:'4.5',price:'20000000 원 ~',favorite:false}));
 const ratedData={
   domestic:{
     categories:[{key:'all',label:'전체'},{key:'seoulGyeonggi',label:'서울 경기'},{key:'busanGyeongnam',label:'부산 경남'},{key:'jeju',label:'제주'},{key:'gangwon',label:'강원'}],
@@ -103,6 +104,8 @@ function showPromotionSlide(index){
   const slide=activePromotionSlides[promotionIndex];
   destinationFeature.style.backgroundImage=slide.image?`url('${slide.image}')`:'';
   destinationPromoLabel.textContent=slide.label;
+  destinationFeature.setAttribute('aria-label',slide.label);
+  destinationPromoLabel.hidden=Boolean(slide.image);
   destinationDots.querySelectorAll('button').forEach((dot,dotIndex)=>{
     const isActive=dotIndex===promotionIndex;
     dot.classList.toggle('active',isActive);

@@ -1,0 +1,20 @@
+[
+  {"file":"hero-01","id":8850963,"subject":"제주 해안 풍경","slug":"landscape-photography-of-jeju-island","width":1920},
+  {"file":"hero-02","id":4118275,"subject":"몰디브 섬과 휴양 리조트","slug":"aerial-photography-of-island","width":1920},
+  {"file":"hero-03","id":16849864,"subject":"프리미엄 호텔 외관","slug":"luxurious-hotel-with-swimming-pool","width":1920},
+  {"file":"hotel-01","id":164595,"subject":"모던 객실 인테리어","slug":"black-and-grey-bedspread-on-bed-and-pillow","width":900},
+  {"file":"hotel-02","id":29702286,"subject":"오션뷰 객실","slug":"modern-hotel-room-with-ocean-view-and-twin-beds","width":900},
+  {"file":"hotel-03","id":14024791,"subject":"야자수와 리조트 풀","slug":"palm-trees-reflecting-in-a-hotel-pool","width":900},
+  {"file":"hotel-04","id":29901801,"subject":"풀뷰 호텔 객실","slug":"contemporary-hotel-room-with-pool-view-in-pattaya","width":900},
+  {"file":"hotel-05","id":20639392,"subject":"석양의 오션뷰 리조트","slug":"pool-and-palm-trees-in-resort-at-sunset","width":900},
+  {"file":"hotel-06","id":14022373,"subject":"호텔 수영장","slug":"swimming-pool-in-a-hotel","width":900},
+  {"file":"hotel-07","id":35857672,"subject":"바다가 보이는 호텔 객실","slug":"modern-hotel-room-with-ocean-view-in-heringsdorf","width":900},
+  {"file":"hotel-08","id":14746032,"subject":"바다 전망 호텔 라운지","slug":"hotel-room-with-view-on-the-sea","width":900},
+  {"file":"destination-jeju","id":34374326,"subject":"제주 화산암 해안","slug":"tranquil-coastal-view-of-jeju-island-south-korea","width":1200},
+  {"file":"destination-busan","id":37448898,"subject":"부산 해안과 스카이캡슐","slug":"scenic-view-of-busan-skyline-and-coastal-monorail","width":1200},
+  {"file":"destination-gangneung","id":16252896,"subject":"강릉 바닷가 버스정류장","slug":"bus-stop-on-sea-shore","width":1200},
+  {"file":"destination-tokyo","id":17139203,"subject":"도쿄 스카이라인","slug":"the-view-of-tokyo","width":1200},
+  {"file":"destination-osaka","id":15924870,"subject":"오사카 도시 풍경","slug":"cityscape-of-osaka","width":1200},
+  {"file":"destination-bangkok","id":1031659,"subject":"방콕 왓 아룬 강변 풍경","slug":"city-landscape","width":1200},
+  {"file":"partner-01","id":695193,"subject":"호텔 로비와 파트너 제휴","slug":"spacious-lobby-interior-of-luxury-hotel","width":1600}
+]

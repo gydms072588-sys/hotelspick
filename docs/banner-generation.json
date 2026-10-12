@@ -1,0 +1,38 @@
+[
+  {
+    "file": "hero-illustrated-01",
+    "source": "C:/Users/User/.codex/generated_images/01a1317c-add8-7370-ae17-4d3872504892/exec-a8e5c1bc-330c-4660-b40f-00c66c53da5f.png",
+    "mobile": false,
+    "prompt": "Create one finished Korean travel advertising website hero banner, very wide landscape aspect ratio 3:1, high resolution. Style: delightful editorial cut-paper illustration with watercolor paper grain, lightly retro tourism poster, bright cyan sky, hand painted shapes, sophisticated clean composition. Full bleed no white margins. Similar mood to the user's second reference (two Korean illustrated tourism banners), create original artwork, no Gettyimages mark or any watermark. Center title must remain entirely within central 28% of image width and central 45% height so it survives a tall mobile object-fit cover crop. Illustrated landscape across whole width, visual details at far edges, quiet sky behind text. Title big heavy condensed Korean lettering, crisp perfectly legible correct Hangul. Exact text only as specified. No UI, no search box, no buttons, no photo, no mockup. Subject Damyang South Korea: lush green bamboo forest and metasequoia trees along bottom and far sides, small colorful paragliders in sky at outer thirds, serene pale blue sky, rolling emerald hills. Center exact title two lines '싱그러운' and '담양여행', dark forest green, small centered uppercase 'DAMYANG TRAVEL' in green rectangular label below. Small centered eyebrow above '푸른 숲에서 만나는 쉼'."
+  },
+  {
+    "file": "hero-illustrated-02",
+    "source": "C:/Users/User/.codex/generated_images/01a1317c-add8-7370-ae17-4d3872504892/exec-7b1f7638-5b63-42d9-9c6e-0dcd9f8c9009.png",
+    "mobile": false,
+    "prompt": "Create one finished Korean travel advertising website hero banner, very wide landscape aspect ratio 3:1, high resolution. Style: delightful editorial cut-paper illustration with watercolor paper grain, lightly retro tourism poster, bright cyan sky, hand painted shapes, sophisticated clean composition. Full bleed no white margins. Similar mood to the user's second reference (two Korean illustrated tourism banners), create original artwork, no Gettyimages mark or any watermark. Center title must remain entirely within central 28% of image width and central 45% height so it survives a tall mobile object-fit cover crop. Illustrated landscape across whole width, visual details at far edges, quiet sky behind text. Title big heavy condensed Korean lettering, crisp perfectly legible correct Hangul. Exact text only as specified. No UI, no search box, no buttons, no photo, no mockup. Subject Jeju island South Korea: cobalt ocean and curved ivory sand beach, green distant coast, tiny sailboats at sides, orange mandarin branches and yellow rapeseed flowers framing bottom edges, small friendly gray dol hareubang at far left. Center exact title two lines '봄향기 가득' in golden yellow and '제주여행' in white, with thin deep blue shadow for readability. Small centered uppercase 'JEJU ISLAND TRAVEL' in cream rectangular label below. Small centered eyebrow above '바다와 꽃길을 따라 떠나요'."
+  },
+  {
+    "file": "hero-illustrated-03",
+    "source": "C:/Users/User/.codex/generated_images/01a1317c-add8-7370-ae17-4d3872504892/exec-4a28b936-1838-4987-b10f-d6578037cf3f.png",
+    "mobile": false,
+    "prompt": "Create one finished Korean travel advertising website hero banner, very wide landscape aspect ratio 3:1, high resolution. Style: delightful editorial cut-paper illustration with watercolor paper grain, lightly retro tourism poster, bright cyan sky, hand painted shapes, sophisticated clean composition. Full bleed no white margins. Similar mood to the user's second reference (two Korean illustrated tourism banners), create original artwork, no Gettyimages mark or any watermark. Center title must remain entirely within central 28% of image width and central 45% height so it survives a tall mobile object-fit cover crop. Illustrated landscape across whole width, visual details at far edges, quiet sky behind text. Title big heavy condensed Korean lettering, crisp perfectly legible correct Hangul. Exact text only as specified. No UI, no search box, no buttons, no photo, no mockup. Subject tropical Maldives: turquoise lagoon, small luxurious overwater bungalows near outer edges, coconut palms framing left and right, white sandy island along bottom, small coral and tropical foliage foreground, soft blue sky. Center exact title two lines '설렘 가득' in ivory and '몰디브여행' in deep teal with crisp contrast. Small centered uppercase 'MALDIVES TRAVEL' in ivory rectangular label below. Small centered eyebrow above '눈부신 바다에서 쉬어가요'."
+  },
+  {
+    "file": "hero-illustrated-01-mobile",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1317c-add8-7370-ae17-4d3872504892\\exec-ea5f09d5-1240-4504-a9cf-e5680fe7c3d7.png",
+    "mobile": true,
+    "prompt": "Adapt the corresponding original landscape banner into a 2:3 portrait mobile hero. Preserve watercolor cut-paper style, palette, destination and exact Korean/English text. Recompose scenery; complete title at 28–58% height within central 80% width, eyebrow near22%, bottom20% scenery reserved for search overlay. No UI, border or watermark."
+  },
+  {
+    "file": "hero-illustrated-02-mobile",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1317c-add8-7370-ae17-4d3872504892\\exec-ab137e72-0d73-434d-a6d0-df0de86e3d75.png",
+    "mobile": true,
+    "prompt": "Adapt the corresponding original landscape banner into a 2:3 portrait mobile hero. Preserve watercolor cut-paper style, palette, destination and exact Korean/English text. Recompose scenery; complete title at 28–58% height within central 80% width, eyebrow near22%, bottom20% scenery reserved for search overlay. No UI, border or watermark."
+  },
+  {
+    "file": "hero-illustrated-03-mobile",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1317c-add8-7370-ae17-4d3872504892\\exec-b9dee554-ef71-4420-b899-481696de7f6c.png",
+    "mobile": true,
+    "prompt": "Adapt the corresponding original landscape banner into a 2:3 portrait mobile hero. Preserve watercolor cut-paper style, palette, destination and exact Korean/English text. Recompose scenery; complete title at 28–58% height within central 80% width, eyebrow near22%, bottom20% scenery reserved for search overlay. No UI, border or watermark."
+  }
+]

@@ -127,3 +127,9 @@ body.has-fixed-header{padding-top:50px}
   .hero-dots{bottom:132px}
   .hero-arrow{display:none}
 }
+
+/* Portfolio images: retain existing container dimensions and cover crop. */
+.hero-slide__label{position:absolute;inset:0;display:block;padding:0;border-radius:0;background:transparent}
+.hero-slide__label img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-slide__label picture{display:block;width:100%;height:100%}
+.partner-box{--partner-background-image:linear-gradient(90deg,rgba(255,255,255,.94),rgba(255,255,255,.72) 48%,rgba(255,255,255,.08)),url('../assets/images/partner-01.webp')}
